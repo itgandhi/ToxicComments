@@ -24,7 +24,7 @@ What things you need to install the software and how to install them
 2. Important variables need to know.
 
 	#### max_sentence_length = [integer value]
-	###### Defines maximum length of the comment you want to keep. eg., 500 then comments graterthan 500 characters will be trimed off and less than 500 will be padded by blank space.
+	###### *Defines maximum length of the comment you want to keep. eg., 500 then comments graterthan 500 characters will be trimed off and less than 500 will be padded by blank space.*
   
 	#### dim_length = [integer value]
 	###### Defines dimentions of each word. loosley we can say that one word connected to it's nearest words by meaning.
