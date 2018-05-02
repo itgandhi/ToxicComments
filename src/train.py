@@ -159,19 +159,32 @@ def train(isTrain, max_sentence_length, dim_length, epoches, batch_size, drop, m
 		submission.to_csv(submissionPath,columns = ["id","toxic","severe_toxic","obscene","threat","insult","identity_hate"], index = False)
     
 if __name__ == '__main__':
+	
 	# parameters
-
 	max_sentence_length = 500
 	dim_length = 300
-	epoches = 50
 	batch_size = 64
 	drop = 0.5
+	epoches = 50
 	
+	# path where you want to save trained models
 	modelDirPath = '../trained_models/model_009'
+	
+	#tokenizer path
+	#if tokenizer not exist it will creates automatically
 	tokenizerPath = '../tokenizers/tokenizer_009.pickle'
+	
+	#path for the training file
 	trainPath = '../training_data/train.csv'
+	
+	#path for the testing file
 	testPath = '../training_data/test.csv'
+	
+	#path to the glove embedding file
+	#use any 300 dimention file
 	embeddingPath = '../tokenizers/glove.6B.300d.txt'
+	
+	#path for result file for testing data
 	submissionPath = '../submission_files/submission_009_test.csv'
 
 	# used only if you want to test your already trained model
