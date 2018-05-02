@@ -24,57 +24,44 @@ What things you need to install the software and how to install them
 2. Important variables need to know.
 
 	#### max_sentence_length = [integer value]
-	
 	###### Defines maximum length of the comment you want to keep. eg., 500 then comments graterthan 500 characters will be trimed off and less than 500 will be padded by blank space.
   
-	dim_length = [integer value]
-	
-	Defines dimentions of each word. loosley we can say that one word connected to it's nearest words by meaning.
+	#### dim_length = [integer value]
+	###### Defines dimentions of each word. loosley we can say that one word connected to it's nearest words by meaning.
  
-	batch_size = [integer value]
-	
-	Training batch size.
+	#### batch_size = [integer value]
+	###### Training batch size.
   
-	drop = [real value]
+	#### drop = [real value]
+	###### Dropout layers drop value.
 	
-	Dropout layers drop value.
+	#### epoches = [integer value]
+	###### For howmuch iteration or epoches one want to train the model.
 	
-	epoches = [integer value]
-	
-	For howmuch iteration or epoches one want to train the model.
-	
-	modelDirPath = [string value]
-	
-	Path to a directory where you want to store trained models and checkpoints.
+	#### modelDirPath = [string value]
+	###### Path to a directory where you want to store trained models and checkpoints.
+   
+	#### tokenizerPath = [string value]
+	###### Path to previously tokenized pickel file. if it does not exists it will create new one.
   
-	tokenizerPath = [string value]
-	
-	Path to previously tokenized pickel file. if it does not exists it will create new one.
+	#### trainPath = [string value]
+	###### Path to training data.
   
-	trainPath = [string value]
-	
-	Path to training data.
+	#### testPath = [string value]
+	###### Path to testing data.
   
-	testPath = [string value]
-	
-	Path to testing data.
+	#### embeddingPath = [string value]
+	###### Path to GLOVE embedding vector file. select file accordengly to dim_length otherwise it will give you an error.
   
-	embeddingPath = [string value]
-	
-	Path to GLOVE embedding vector file. select file accordengly to dim_length otherwise it will give you an error.
-  
-	submissionPath = [string value]
-	
-	Path to store submission file.
+	#### submissionPath = [string value]
+	###### Path to store submission file.
 
-	modelPath = [string value]
-	
-	Used only if you want to test your already trained model.
+	#### modelPath = [string value]
+	###### Used only if you want to test your already trained model.
 
-	isTrain = [True or False]
-	
-	True if you want to train your model.
-	False if you want to test your model.
+	#### isTrain = [True or False]
+	###### True if you want to train your model.
+	###### False if you want to test your model.
 
 3. Run `python3 train.py` 
 
